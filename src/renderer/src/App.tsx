@@ -1,8 +1,10 @@
-import "./styles/global.css"
+import './styles/global.css'
 
 export function App() {
   return (
-    <h1 className="text-violet-400 font-sans">Hello world!</h1>
+    <div className="h-screen w-screen flex items-center justify-center bg-gray-100">
+      <h1 className="text-4xl font-bold text-gray-800">Hello, Pseudo Notion!</h1>
+    </div>
   )
 }
 

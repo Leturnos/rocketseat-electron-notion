@@ -1,5 +1,5 @@
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
-import { join } from 'path'
+import { join } from 'node:path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png'
 import { nativeImage } from 'electron/common'
@@ -11,7 +11,8 @@ function createWindow(): void {
     height: 600,
     show: false,
     autoHideMenuBar: true,
-    icon: nativeImage.createFromDataURL(icon),    
+    icon: nativeImage.createFromDataURL(icon),
+    backgroundColor: '#17141f',
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
