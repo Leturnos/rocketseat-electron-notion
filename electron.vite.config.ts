@@ -7,6 +7,9 @@ export default defineConfig({
   main: {},
   preload: {},
   renderer: {
+    define: {
+      'process.platform': JSON.stringify(process.platform),
+    },
     resolve: {
       alias: {
         '@renderer': path.resolve('src/renderer/src/')

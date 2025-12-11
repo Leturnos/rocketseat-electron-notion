@@ -1,11 +1,17 @@
 import './styles/global.css'
+import { Header } from '@renderer/components/Header'
+import { Sidebar } from '@renderer/components/Sidebar'
 
 export function App() {
   return (
-    <div className="h-screen w-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-gray-800">Hello, Pseudo Notion!</h1>
+    <div className="h-screen w-screen text-rotion-100 flex-1">
+      <Sidebar/>
+      <div className="flex-1 flex flex-col max-h-screen">
+        <Header/>
+        <main className='flex-1 items-center justify-center text-rotion-400'>
+          Selecione ou crie um documento para começar.
+        </main>
+      </div>
     </div>
   )
 }
-
-

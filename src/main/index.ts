@@ -13,6 +13,11 @@ function createWindow(): void {
     autoHideMenuBar: true,
     icon: nativeImage.createFromDataURL(icon),
     backgroundColor: '#17141f',
+    titleBarStyle: 'hiddenInset',
+    trafficLightPosition: {
+      x: 20,
+      y: 20,
+    },
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,

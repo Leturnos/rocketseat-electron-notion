@@ -16,3 +16,7 @@
   --color-rotion-800: #1e1a29;
   --color-rotion-900: #17141f;
 }
+
+html {
+  overflow: hidden;
+}
