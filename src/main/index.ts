@@ -8,8 +8,8 @@ import { registerRoute } from '../renderer/src/lib/electron-router-dom'
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 600,
+    width: 1120,
+    height: 700,
     show: false,
     autoHideMenuBar: true,
     icon: nativeImage.createFromDataURL(icon),
