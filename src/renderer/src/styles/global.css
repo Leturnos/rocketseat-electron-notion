@@ -20,3 +20,11 @@
 html {
   overflow: hidden;
 }
+
+@utility region-drag {
+  -webkit-app-region: drag;
+}
+
+@utility region-no-drag {
+  -webkit-app-region: no-drag;
+}

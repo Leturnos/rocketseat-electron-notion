@@ -13,7 +13,12 @@ function createWindow(): void {
     autoHideMenuBar: true,
     icon: nativeImage.createFromDataURL(icon),
     backgroundColor: '#17141f',
-    titleBarStyle: 'hiddenInset',
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#17141f',
+      symbolColor: '#ffffff',
+      height: 30,
+    },
     trafficLightPosition: {
       x: 20,
       y: 20,
