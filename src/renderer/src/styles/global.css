@@ -17,6 +17,27 @@
   --color-rotion-700: #272235;
   --color-rotion-800: #1e1a29;
   --color-rotion-900: #17141f;
+
+  --animate-slide-in: slideIn 250ms ease-out;
+  --animate-slide-out: slideOut 250ms ease-in;
+
+  @keyframes slideIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--radix-collapsible-content-width);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      width: var(--radix-collapsible-content-width);
+    }
+    to {
+      width: 0;
+    }
+  }
 }
 
 html {
