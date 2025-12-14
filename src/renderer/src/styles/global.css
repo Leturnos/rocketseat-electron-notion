@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+
 @theme {
   /* Fonts */
   --font-sans: "Inter", sans-serif;
@@ -28,3 +30,4 @@ html {
 @utility region-no-drag {
   -webkit-app-region: no-drag;
 }
+
