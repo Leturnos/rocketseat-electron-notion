@@ -5,6 +5,8 @@ import icon from '../../resources/icon.png'
 import { nativeImage } from 'electron/common'
 import { registerRoute } from '../renderer/src/lib/electron-router-dom'
 
+import './ipc'
+
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
