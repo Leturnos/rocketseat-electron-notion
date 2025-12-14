@@ -6,6 +6,7 @@ import { nativeImage } from 'electron/common'
 import { registerRoute } from '../renderer/src/lib/electron-router-dom'
 
 import './ipc'
+import './store'
 
 function createWindow(): void {
   // Create the browser window.
