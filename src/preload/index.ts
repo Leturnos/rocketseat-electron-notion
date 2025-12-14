@@ -10,8 +10,10 @@ declare global {
 
 // Custom APIs for renderer
 const api = {
-  fetchDocuments: (args: any) => {
-    return electronAPI.ipcRenderer.invoke('fetch-documents', args)
+  fetchDocuments(): Promise<
+    Array<{ id: number; title: string; content: string }>
+  > {
+    return electronAPI.ipcRenderer.invoke('fetch-documents')
   },
 }
 
