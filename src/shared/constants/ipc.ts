@@ -3,7 +3,7 @@ export const IPCChannels = {
     FETCH_ALL: 'documents:fetch-all',
     FETCH: 'documents:fetch',
     CREATE: 'documents:create',
-    UPDATE: 'documents:update',
+    SAVE: 'documents:save',
     DELETE: 'documents:delete',
   },
 }
